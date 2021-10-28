@@ -129,6 +129,8 @@ img {
 .contact-list {
   display: flex;
   text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-list .item + .item {
@@ -143,20 +145,20 @@ img {
 }
   
 
-
-
 .header-contact {
-  display: block;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+  display: flex;
+  align-items: center;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+
+
+
+
 
 /* --------hero--------------- */
 
@@ -387,7 +389,6 @@ img {
 .team-social-link {
   width: 100%;
   height: 100%;
-  /* background-color: brown; */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -450,18 +451,15 @@ img {
   fill: currentColor
 }
 
-.client-item:hover,
-.client-item:focus {
-  color: var(--accent-color);
-}
+
 
 .client-link:hover,
 .client-link:focus {
-  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
-.client-link:hover .item-svg,
-.client-link:focus .item-svg {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
@@ -526,6 +524,75 @@ img {
   color: var(--accent-color);
 }
 
+
+
+.footer-container {
+  margin-right: 70px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fourth-text-color);
+
+  margin-bottom: 20px;
+}
+
+.team-footer {
+   display: flex;
+}
+
+.footer-container-general {
+  display: flex;
+}
+
+.team-footer-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  
+}
+
+.team-footer-item:last-child {
+  margin-right: 0px;
+}
+
+.team-footer-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fourth-text-color);
+}
+
+.footer-link {
+  fill: currentColor;
+}
+
+.team-footer-link:hover,
+.team-footer-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-footer-container {
+  padding-top: 12px;
+}
+
+
+
+
+
+
+
+
+
 /* -------------Портфоліо------------- */
 
 .portfolio-padding {
@@ -571,11 +638,18 @@ img {
 .portfolio-button:focus {
   color: var(--button-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button.current {
   background-color: var(--accent-color);
   color: var(--fourth-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
