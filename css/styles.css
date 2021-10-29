@@ -122,15 +122,13 @@ img {
   color: var(--accent-color);
 }
 
-.contact-list-flex {
-  margin-left: auto;
-}
+
 
 .contact-list {
   display: flex;
   text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-left: auto;
+ 
 }
 
 .contact-list .item + .item {
@@ -154,6 +152,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 
@@ -427,9 +428,9 @@ img {
 
 .client-link {
   display: block;
-  /* width: 170px;
-  height: 92px; */
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
@@ -547,6 +548,7 @@ img {
 
 .footer-container-general {
   display: flex;
+  align-items: baseline;
 }
 
 .team-footer-item {
@@ -581,9 +583,9 @@ img {
   background-color: var(--accent-color);
 }
 
-.social-footer-container {
+/* .social-footer-container {
   padding-top: 12px;
-}
+} */
 
 
 
@@ -648,7 +650,7 @@ img {
 }
 
 .portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
